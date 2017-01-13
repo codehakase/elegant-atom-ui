@@ -1,14 +1,40 @@
+//Syntax variables
+
+@cyan: #446675;
+@blue: #40796b;
+@purple: #6a7c02;
+@green: #93a14a;
+@red: #a43227;
+@orange: #a56b32;
+@light-orange: #b5a163;
+@very-light-gray: #9b836a;
+@light-gray: #736557;
+@gray: #352b22;
+@dark-gray: #010101;
+@very-dark-gray: #000508;
+
+// BG of selected file in sidebar
+@n_selected: #2b231b;
+// BG of sidebar
+@n_defaultbg: #000000;
+// BG of bottom toolbar and "find" panel
+@n_darkerbg: #110b04;
+// Color of selected text in sidebar
+@n_highlight: #d4d4d4;
+// Border color of tabs
+@n_tabborder: #170301;
+
 // Colors
 
-@text-color: #aaa;
-@text-color-subtle: #555;
-@text-color-highlight: #fff;
+@text-color: @very-light-gray; //changed
+@text-color-subtle: @light-gray; //changed
+@text-color-highlight: @n_highlight; //changed
 @text-color-selected: @text-color-highlight;
 
-@text-color-info: #5293d8;
-@text-color-success: #2BDA77;
-@text-color-warning: #ff982d;
-@text-color-error: #c00;
+@text-color-info: @cyan; //changed
+@text-color-success: @blue; //changed
+@text-color-warning: lighten(@orange, 15%); //changed
+@text-color-error: saturate( lighten(@red, 10%), 10%); //changed
 
 @text-color-ignored: @text-color-subtle;
 @text-color-added: @text-color-success;
@@ -16,59 +42,68 @@
 @text-color-modified: @text-color-warning;
 @text-color-removed: @text-color-error;
 
-@background-color-info: #0098ff;
-@background-color-success: #17ca65;
-@background-color-warning: #ffaa2c;
-@background-color-error: #c00;
+@background-color-info: @cyan; //changed
+@background-color-success: @blue; //changed
+@background-color-warning: lighten(@orange, 15%); //changed
+@background-color-error: saturate( lighten(@red, 10%), 10%); //changed
 @background-color-highlight: rgba(255, 255, 255, 0.07);
-@background-color-selected: #4182C4;
+@background-color-selected: @n_selected; //changed
 
 @app-background-color: #333;
 
 @base-background-color: lighten(@tool-panel-background-color, 5%);
-@base-border-color: rgba(0, 0, 0, 0.5);
+@base-border-color: @n_darkerbg;
 
 @pane-item-background-color: @base-background-color;
-@pane-item-border-color: rgba(0, 0, 0, 0.5);
+@pane-item-border-color: @n_darkerbg; //changed
 
-@input-background-color: #212224;
+@input-background-color: @dark-gray; //changed
 @input-border-color: @base-border-color;
 
-@tool-panel-background-color: #1d1f21;
+@tool-panel-background-color: @n_darkerbg; // changed
 @tool-panel-border-color: @base-border-color;
 
-@inset-panel-background-color: #161719;
+@inset-panel-background-color: @n_defaultbg; //changed
 @inset-panel-border-color: @base-border-color;
 
-@panel-heading-background-color: #43484d;
+@panel-heading-background-color: @gray; //changed
 @panel-heading-border-color: fadein(@base-border-color, 10%);
 
-@overlay-background-color: #202123;
+@overlay-background-color: @dark-gray; //changed
 @overlay-border-color: @background-color-highlight;
 
-@button-background-color: #43484d;
+@button-background-color: @gray; //changed
 @button-background-color-hover: lighten(@button-background-color, 5%);
-@button-background-color-selected: #5c6064;
+@button-background-color-selected: @dark-gray; //changed
 @button-border-color: @base-border-color;
 
-@tab-bar-background-color: #222;
+@tab-bar-background-color: @very-dark-gray; //changed
 @tab-bar-border-color: darken(@tab-background-color-active, 10%);
-@tab-background-color: #333;
-@tab-background-color-active: #222;
-@tab-border-color: #484848;
+@tab-background-color: @n_defaultbg; //changed
+@tab-background-color-active: @very-dark-gray; //changed
+@tab-border-color: @n_tabborder; //changed
 
-@tree-view-background-color: #303030;
+@tree-view-background-color: @tool-panel-background-color;
 @tree-view-border-color: @tool-panel-border-color;
 
-@scrollbar-background-color: #222425; // Needs to be opaque -> atom/atom/issues/4578
-@scrollbar-color: rgba(92, 92, 92, 0.5);
+@scrollbar-background-color: @very-dark-gray; //changed
+@scrollbar-color: @gray; //changed
 
 @ui-site-color-1: @background-color-success; // green
 @ui-site-color-2: @background-color-info; // blue
 @ui-site-color-3: @background-color-warning; // orange
-@ui-site-color-4: #db2ff4; // purple
-@ui-site-color-5: #f5e11d; // yellow
-
+@ui-site-color-4: @purple; // changed
+@ui-site-color-5: @red; // changed
+// CUSTOM COLORS/VARS ADDED TO LESS FILES
+//tree-view.less
+@tree-view-selected-bg: @n_selected; //new > line 8
+@sidebar: @n_defaultbg; //new > line 15
+@sidebar-focus: lighten(@n_defaultbg, 0.5%); //new > line 19
+//tabs.less
+@tab-default-bg: @n_defaultbg; //new > line 45
+//tooltips.less
+@tip-background-color: lighten(@very-light-gray, 10%); //variables taken out of tooltips.less and placed here for access
+@tip-text-color: @very-dark-gray; //variables taken out of tooltips.less and placed here for access
 
 // Sizes
 
