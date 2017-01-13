@@ -19,4 +19,4 @@ Your current choice will be remembered the next time you open Atom.
 
 ## License
 
-This package is licensed under the MIT License. See the [license file](https://github.com/codehakase/elegant-atom-ui/LICENSE.md) for details.
+This package is licensed under the MIT License. See the [license file](https://github.com/codehakase/elegant-atom-ui/blob/v1.0.0/LICENSE.md) for details.
