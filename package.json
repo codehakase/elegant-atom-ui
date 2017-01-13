@@ -1,20 +1,19 @@
 {
   "name": "elegant-atom-ui",
   "theme": "ui",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "An elegant UI theme for Atom",
   "license": "MIT",
   "repository": "https://github.com/codehakase/elegant-atom-ui",
   "engines": {
     "atom": ">0.40.0"
-    },
-    "author": {
-        "name": "Francis Sunday alias Codehakase",
-        "role": "Developer",
-        "email": "iamfrankcute@gmail.com"
-    },
-    "support": {
-        "issues": "https://github.com/codehakase/elegant-atom-ui/issues/new"
-    }
-
+  },
+  "author": {
+    "name": "Francis Sunday alias Codehakase",
+    "role": "Developer",
+    "email": "iamfrankcute@gmail.com"
+  },
+  "support": {
+    "issues": "https://github.com/codehakase/elegant-atom-ui/issues/new"
+  }
 }
