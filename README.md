@@ -1,9 +1,18 @@
-# Atom Dark UI theme
+# Elegant Atom UI theme
 
-A dark UI theme for Atom.
+A Mild theme that focuses on warmth while coding.
 
-This theme is installed by default with Atom and can be activated by going to
-the _Themes_ section in the Settings view (`cmd-,`) and selecting it from the
-_UI Themes_ drop-down menu.
 
-![](https://f.cloud.github.com/assets/671378/2265086/c6897dba-9e7b-11e3-945d-551cac610717.png)
+## Installation
+
+via `apm`
+
+`apm install elegant-atom-ui`
+
+## Usage
+
+To enable ELegant, hit `ctr + ,` or `cmd + ,` and choose the Elegant atom Ui from the UI section (goes well with [Elegant Syntax](https://github.com/codehakase/elegant-atom-syntax)
+
+Your current choice will be remembered the next time you open Atom.
+
+![image](https://cloud.githubusercontent.com/assets/9336187/21923158/c8c3f134-d972-11e6-871b-7bf307175e6f.png)
